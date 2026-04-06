@@ -1,31 +1,39 @@
 def main():
 
-    print("<---WELCOME TO NOTES APP--->")
+    print("<---WELCOME TO NOTES APP--->" + "\n")
     
     while True:
+    
+        print("<---Choose your option--->" + "\n")
         print("1. Add a note")
-        print("2. View notes")
-        print("3. Exit")
+        print("2. view notes")
+        print("3. exit")
 
-        user = input("Enter the choice: ").strip()
+        choice = input("Enter your choice: ").strip()
 
-        if user == "3":
-            print("Goodbye!") 
-            break
+        if choice == "1":
 
-        elif user == "1":
-            user2 = input("Enter notes (saperated by comma): ") 
+            note = input("Enter your note: ")
 
-            with open("notes.txt", "a") as file:
-                file.write(user2 + "\n")
+            with open("notes2.txt", "a") as file:
+                file.write(note + "\n")
 
-            print("Note added successfully!")
-        elif user == "2":
-            with open("notes.txt", "r") as file:
-                print(file.read())
-                print(type(file))
-        else:
-            print("Invalid input! Please enter number followed by choices.")
+            print("<--Note added successfully-->") 
+
+        elif choice == "2":
+            try:
+                with open("notes2.txt", "r") as file:
+                    print(file.read())
+                    
+            except FileNotFoundError:
+                print("Note is empty! Please add a note first.")
+
+        elif choice == "3":
+            print("Goodbye")
+            break        
+
+        else: 
+            print("Invalid input! Please enter choice from 1 to 3.")
+
             
-
 main()
