@@ -5,6 +5,14 @@ This project allows users to manage notes directly from the terminal with basic 
 
 ---
 
+⏸️ Status: ON HOLD
+
+This project is currently paused. v3 is stable and fully functional,
+but active development has been suspended for now.
+v4 features are planned but not being worked on at this time.
+
+---
+
 🚀 Features
 
 - Add a note
@@ -16,7 +24,7 @@ This project allows users to manage notes directly from the terminal with basic 
 
 ---
 
-🧠 What’s New in v3
+🧠 What's New in v3
 
 - Added Update Note feature
 - Improved input validation
@@ -58,7 +66,9 @@ python notes.py
 
 ---
 
-🔮 Future (v4)
+🔮 Future (v4) — Planned, Not Active
+
+> These features are planned for a future release when development resumes.
 
 - JSON storage
 - Search feature
@@ -76,3 +86,4 @@ https://github.com/buildwith-krishna
 📌 Version
 
 v3 – Update feature + improvements
+🔒 Development paused — v3 is the current stable release
